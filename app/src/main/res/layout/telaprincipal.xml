@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear"
+    android:orientation="vertical"
+    android:background="#202d38">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstname_input"
+        android:hint="Firstname"
+        android:textColorHint="#0086ed"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastname_input"
+        android:hint="Lastname"
+        android:textColorHint="#0086ed"/>
+
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="60sp"
+        android:text="Adicionar Estudante"
+        android:id="@+id/button_add"
+        android:onClick="btn_click"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#0086ed"
+        android:background="#202d38"/>
+
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="60sp"
+        android:text="Deletar Estudante"
+        android:id="@+id/btn_delete"
+        android:onClick="btn_click"
+        android:layout_gravity="center"
+        android:textColor="#0086ed"
+        android:background="#202d38"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="60sp"
+        android:text="Atualizar Dados"
+        android:id="@+id/btn_update"
+        android:onClick="btn_click"
+        android:layout_gravity="center"
+        android:textColor="#0086ed"
+        android:background="#202d38"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="60sp"
+        android:text="Lista de Estudantes"
+        android:id="@+id/list_students"
+        android:onClick="btn_click"
+        android:layout_gravity="center"
+        android:textColor="#0086ed"
+        android:background="#202d38"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="italic|bold"
+        android:text="Lista de Estudantes:"
+        android:gravity="top|center"
+        android:padding="@dimen/activity_vertical_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15dp"
+        android:text=" "
+        android:id="@+id/textView"
+        android:gravity="top|left"/>
+</LinearLayout>
